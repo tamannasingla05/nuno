@@ -1,5 +1,6 @@
 body{
     font-family: 'Cairo', sans-serif;
+    overflow-x: hidden;
 }
 
 h2{
@@ -123,6 +124,7 @@ overflow: hidden;
     padding: 0 !important;
 }
 
+
 /*contact*/
 #contact{
     background-color: rgb(77, 76, 76);
@@ -160,11 +162,29 @@ overflow: hidden;
     color: teal;
 }
 
-@media (max-width:900px){
+@media (max-width:767px){
     .title-text{
-        text-align: center;
         position: absolute;
-        top: 10%;
-        left: 10%;
+        top: 25%;
+        left: 0;
+        right: 0;
+    }
+    .big-heading{
+        font-size: 2.3rem;
+    }
+    .sub-heading{
+        font-size: 1.2rem;
+    }
+    .course-text h2{
+        font-size: 1.5rem;
+    }
+    .course-text p{
+        font-size: 0.9rem;
+    }
+    .course-text{
+        width: 80%;
+    }
+    .footer{
+        width: 70%;
     }
 }
